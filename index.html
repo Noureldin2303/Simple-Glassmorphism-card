@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <title>Glassmorphism</title>
+  </head>
+  <body>
+    <section>
+      <div class="card">
+        <div class="item">
+                <span class="logo">LOGO</span>
+            <nav>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+                <a href="#">Ideas</a>
+                <a href="#">How it Works ?</a>
+                <a href="#">More &#11206;</a>
+            </nav>
+            <li>
+          <h1>Stay Home</h1>
+          <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
+          </p>
+            <p class="copy">Copyright &copy; All Rights Reserved To <span>NourElDin Farag</span> &reg;</p>
+            <input type="button" value="Join US" class="btn">
+          </li>
+          <img src="Jukebox_-_Stay_Home-removebg-preview.png" class="img1">
+
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+      script.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+      });
+    </script>
+  </body>
+</html>

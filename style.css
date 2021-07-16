@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #222;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#cc33ff,#ac00e6);
+  clip-path: circle(30% at left 70%);
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#08ff73,#08ff73);
+  clip-path: circle(20% at right 10%);
+}
+
+section {
+  position: relative;
+  display: flex;
+  max-width: 1200px;
+  flex-wrap: wrap;
+  z-index: 1;
+}
+
+section .card {
+  position: relative;
+  width: 2800px;
+  height: 550px;
+  margin: 30px;
+  box-shadow: 20px 20px 50px #12121280;
+  border-radius: 15px;
+  background: #ffffff1;
+  overflow: hidden;
+  display: flex;
+  border-top: 1px solid #ffffff80;
+  border-left: 1px solid #ffffff80;
+  backdrop-filter: blur(5px);
+}
+
+section .card .item {
+  padding: 20px;
+  text-align: left;
+  opacity: 1; /* 0 */
+  transition: 0.5s;
+}
+section .card .item .logo{
+    padding: 40px;
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: Tahoma;
+}
+section .card .item nav{
+    position: absolute;
+    top: 30px;
+    left: 500px;
+}
+section .card .item nav a{
+    text-decoration: none;
+    font-style: none;
+    padding-left: 40px;
+    color: lavender;
+}
+section .card .item li{
+    padding-top: 120px;
+    padding-left:50px;
+    list-style-type: none;
+}
+section .card .item h1{
+    font-size: 2.6rem;    
+    font-family:   Verdana;
+}
+section .card .item p{
+    max-width: 450px;
+    text-align: left;
+    padding-top: 15px;
+    padding-left: 0;
+}
+section .card .item .btn{
+    border: none;
+    padding: 15px;
+    font-size: 13px;
+    font-weight: bolder;
+    border-radius:25px;
+    color:lavender;
+    background-color: #260d26;
+}
+section .card .item .btn:hover{
+     background-color:lavender ;
+     color: #260d26;
+}
+section .card .item .img1{
+    width:500px;
+    position: relative;
+    top:-340px ;
+    left: 530px;
+}
+section .card .item .copy{
+    position: relative;
+    top:120px ;
+    left: 20px;
+    font-weight: bold;
+    color: lavender;
+}
+section .card .item .copy span{
+   color:#ac00e6;
+}
+
